@@ -18,3 +18,12 @@ void Hitung_RataRata_Bobot(Siswa siswa) {
     float RataRataBobot = (siswa.NilaiTugas + siswa.NilaiKuis + siswa.NilaiUjian) / 3.0;
     cout << "Rata-Rata Bobot " << siswa.nama << " Adalah " << RataRataBobot << endl;
 }
+
+void Hitung_Ambang_Nilai(Siswa siswa, float NilaiAkhir) {
+    float AmbangNilai = 60;
+    if (NilaiAkhir >= AmbangNilai) {
+        cout << siswa.nama << " Lulus dengan Nilai " << NilaiAkhir << endl;
+    } else {
+        cout << siswa.nama << " Tidak Lulus dengan Nilai " << NilaiAkhir << endl;
+    }
+}
